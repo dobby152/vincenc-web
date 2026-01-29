@@ -3,164 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VINCENEC — Signál & Bezpečí</title>
-    <meta name="description" content="Antény, satelity, alarmy a kamerové systémy. Havířov a okolí.">
+    <title>Martin Vincenec | Antény, Satelity, Alarmy, Kamery</title>
+    <meta name="description" content="Prodej a servis antén, satelitní techniky, alarmů a kamerových systémů. Havířov a Moravskoslezský kraj.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&family=DM+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">Martin Vincenec</a>
+            <ul class="nav-menu">
+                <li><a href="#sluzby">Služby</a></li>
+                <li><a href="#o-nas">O nás</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <a href="tel:+420123456789" class="btn btn-primary nav-cta">Zavolat</a>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Header -->
-    <header class="header">
-        <a href="#" class="logo">VINCENEC</a>
-        <nav class="nav">
-            <a href="#co-delame">Služby</a>
-            <a href="#kontakt">Kontakt</a>
-        </nav>
-        <a href="tel:+420123456789" class="header-cta">
-            <span class="cta-dot"></span>
-            Zavolat
-        </a>
-    </header>
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#o-nas">O nás</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="tel:+420123456789" class="btn btn-primary">Zavolat</a></li>
+        </ul>
+    </div>
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-content">
-            <p class="hero-eyebrow">Havířov & Moravskoslezský kraj</p>
-            <h1 class="hero-title">
-                <span class="title-line">Přinášíme</span>
-                <span class="title-line"><em>signál</em> do vašeho</span>
-                <span class="title-line">domova</span>
-            </h1>
-            <p class="hero-subtitle">
-                Antény · Satelity · Alarmy · Kamery
-            </p>
-        </div>
-        <div class="hero-visual">
-            <div class="signal-wave">
-                <svg viewBox="0 0 200 200" fill="none">
-                    <circle cx="100" cy="100" r="20" stroke="currentColor" stroke-width="1"/>
-                    <circle cx="100" cy="100" r="45" stroke="currentColor" stroke-width="1" opacity="0.6"/>
-                    <circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="1" opacity="0.3"/>
-                    <circle cx="100" cy="100" r="95" stroke="currentColor" stroke-width="1" opacity="0.1"/>
-                </svg>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Antény, satelity a zabezpečení pro váš domov</h1>
+                <p>Profesionální instalace a servis televizní, satelitní a zabezpečovací techniky v Havířově a okolí.</p>
+                <div class="hero-buttons">
+                    <a href="#kontakt" class="btn btn-primary btn-lg">Nezávazná poptávka</a>
+                    <a href="#sluzby" class="btn btn-outline btn-lg">Naše služby</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-scroll">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
+            <div class="hero-image">
+                <div class="hero-shape"></div>
+            </div>
         </div>
     </section>
 
-    <!-- Intro -->
-    <section class="intro">
-        <div class="intro-content">
-            <div class="intro-number">01</div>
-            <h2 class="intro-title">
-                Profesionální instalace a servis televizní, satelitní a zabezpečovací techniky 
-                pro rodinné domy i bytové komplexy.
-            </h2>
-            <div class="intro-stats">
-                <div class="stat">
-                    <span class="stat-num">500+</span>
-                    <span class="stat-text">realizací</span>
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>500+ realizací</h3>
+                    <p>Spokojených zákazníků v celém regionu</p>
                 </div>
-                <div class="stat">
-                    <span class="stat-num">10+</span>
-                    <span class="stat-text">let praxe</span>
+                <div class="feature">
+                    <div class="feature-icon">⏱</div>
+                    <h3>Rychlý servis</h3>
+                    <p>Pohotovost do 24 hodin</p>
                 </div>
-                <div class="stat">
-                    <span class="stat-num">24h</span>
-                    <span class="stat-text">pohotovost</span>
+                <div class="feature">
+                    <div class="feature-icon">★</div>
+                    <h3>10+ let praxe</h3>
+                    <p>Zkušenosti a profesionalita</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services -->
-    <section id="co-delame" class="services">
-        <div class="services-header">
-            <div class="services-number">02</div>
-            <h2 class="services-title">Co děláme</h2>
+    <section id="sluzby" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Naše služby</h2>
+                <p>Kompletní řešení pro příjem signálu a zabezpečení</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📡</div>
+                    <h3>Televizní antény</h3>
+                    <p>Instalace a nastavení pozemních antén DVB-T2. Měření signálu, individuální i společné antény STA.</p>
+                    <ul>
+                        <li>Měření a analýza signálu</li>
+                        <li>Rekonstrukce STA rozvodů</li>
+                        <li>Panelové i rodinné domy</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛰</div>
+                    <h3>Satelitní systémy</h3>
+                    <p>Kompletní satelitní řešení — Skylink, freeSAT, zahraniční programy pro rodinné domy i bytové komplexy.</p>
+                    <ul>
+                        <li>Skylink, freeSAT, DIGI TV</li>
+                        <li>Společné antény pro BD</li>
+                        <li>Motorové paraboly</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Alarmy a zabezpečení</h3>
+                    <p>Elektronické zabezpečovací systémy pro domácnosti i firmy. Bezdrátové i drátové řešení.</p>
+                    <ul>
+                        <li>Napojení na PCO</li>
+                        <li>Vzdálená správa z mobilu</li>
+                        <li>Bezdrátové systémy</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📹</div>
+                    <h3>Kamerové systémy</h3>
+                    <p>IP a CCTV kamerové systémy s HD rozlišením. Noční vidění, vzdálený přístup.</p>
+                    <ul>
+                        <li>IP a analogové kamery</li>
+                        <li>Vzdálený přístup z mobilu</li>
+                        <li>Záznam a archivace</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-        <div class="services-grid">
-            <article class="service-item">
-                <div class="service-index">A</div>
-                <h3 class="service-name">Televizní antény</h3>
-                <p class="service-desc">
-                    DVB-T2, měření signálu, individuální i společné antény STA, 
-                    rekonstrukce rozvodů pro panelové domy.
-                </p>
-            </article>
-            
-            <article class="service-item">
-                <div class="service-index">B</div>
-                <h3 class="service-name">Satelitní systémy</h3>
-                <p class="service-desc">
-                    Skylink, freeSAT, zahraniční programy. Kompletní instalace 
-                    pro rodinné domy i bytové komplexy.
-                </p>
-            </article>
-            
-            <article class="service-item">
-                <div class="service-index">C</div>
-                <h3 class="service-name">Alarmy & EZS</h3>
-                <p class="service-desc">
-                    Elektronické zabezpečovací systémy. Bezdrátové i drátové řešení, 
-                    napojení na PCO, vzdálená správa.
-                </p>
-            </article>
-            
-            <article class="service-item">
-                <div class="service-index">D</div>
-                <h3 class="service-name">Kamerové systémy</h3>
-                <p class="service-desc">
-                    IP a CCTV kamery s HD rozlišením. Noční vidění, 
-                    vzdálený přístup z mobilu, záznam a archivace.
-                </p>
-            </article>
+    </section>
+
+    <!-- About -->
+    <section id="o-nas" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>O nás</h2>
+                    <p>Jsme specialisté na televizní a satelitní techniku s více než 10 lety zkušeností. Poskytujeme kompletní služby od návrhu přes instalaci až po servis.</p>
+                    <p>Působíme v Havířově a celém Moravskoslezském kraji. Nabízíme rychlý servis s pohotovostí do 24 hodin a víkendovou pohotovost pro společné antény.</p>
+                    <div class="about-list">
+                        <div class="about-item">
+                            <strong>Profesionální přístup</strong>
+                            <span>Kvalitní práce a spolehlivost</span>
+                        </div>
+                        <div class="about-item">
+                            <strong>Férové ceny</strong>
+                            <span>Transparentní kalkulace bez skrytých poplatků</span>
+                        </div>
+                        <div class="about-item">
+                            <strong>Záruka a servis</strong>
+                            <span>Záruční i pozáruční podpora</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-shape"></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Process -->
     <section class="process">
-        <div class="process-header">
-            <div class="process-number">03</div>
-            <h2 class="process-title">Jak to funguje</h2>
-        </div>
-        
-        <div class="process-steps">
-            <div class="process-step">
-                <div class="step-num">01</div>
-                <div class="step-text">
+        <div class="container">
+            <div class="section-header">
+                <h2>Jak spolupráce probíhá</h2>
+                <p>Jednoduchý proces od poptávky po realizaci</p>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
                     <h3>Konzultace</h3>
-                    <p>Zjistíme vaše potřeby a navrhneme řešení.</p>
+                    <p>Zjistíme vaše potřeby a navrhneme optimální řešení.</p>
                 </div>
-            </div>
-            <div class="process-step">
-                <div class="step-num">02</div>
-                <div class="step-text">
+                <div class="step">
+                    <div class="step-number">2</div>
                     <h3>Nabídka</h3>
-                    <p>Transparentní cena bez skrytých poplatků.</p>
+                    <p>Připravíme cenovou nabídku bez skrytých poplatků.</p>
                 </div>
-            </div>
-            <div class="process-step">
-                <div class="step-num">03</div>
-                <div class="step-text">
+                <div class="step">
+                    <div class="step-number">3</div>
                     <h3>Realizace</h3>
                     <p>Profesionální instalace v dohodnutém termínu.</p>
                 </div>
-            </div>
-            <div class="process-step">
-                <div class="step-num">04</div>
-                <div class="step-text">
-                    <h3>Servis</h3>
-                    <p>Záruční i pozáruční podpora. Víkendová pohotovost.</p>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Podpora</h3>
+                    <p>Záruční a pozáruční servis kdykoliv potřebujete.</p>
                 </div>
             </div>
         </div>
@@ -168,28 +195,25 @@
 
     <!-- Reviews -->
     <section class="reviews">
-        <div class="reviews-header">
-            <div class="reviews-number">04</div>
-            <h2 class="reviews-title">Reference</h2>
-        </div>
-        
-        <div class="reviews-marquee">
-            <div class="marquee-track">
-                <div class="review">
-                    <p>"Naprosto perfektní služby. Ráno telefonická poptávka a odpoledne funkční anténní systém."</p>
-                    <span>— Zákazník, 2025</span>
+        <div class="container">
+            <div class="section-header">
+                <h2>Co o nás říkají zákazníci</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Naprosto perfektní služby. Ráno telefonická poptávka a odpoledne funkční anténní systém. Profesionálové."</p>
+                    <span class="review-author">— Zákazník, 2025</span>
                 </div>
-                <div class="review">
-                    <p>"Profesionální přístup, kvalitní práce a ochota. Doporučuji všem."</p>
-                    <span>— Zákazník, 2024</span>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Profesionální přístup, kvalitní práce a ochota. Doporučuji všem, kdo hledá spolehlivého odborníka."</p>
+                    <span class="review-author">— Zákazník, 2024</span>
                 </div>
-                <div class="review">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
                     <p>"Profesionální přístup. Doporučujeme."</p>
-                    <span>— Zákazník, 2025</span>
-                </div>
-                <div class="review">
-                    <p>"Naprosto perfektní služby. Ráno telefonická poptávka a odpoledne funkční anténní systém."</p>
-                    <span>— Zákazník, 2025</span>
+                    <span class="review-author">— Zákazník, 2025</span>
                 </div>
             </div>
         </div>
@@ -197,49 +221,81 @@
 
     <!-- Contact -->
     <section id="kontakt" class="contact">
-        <div class="contact-content">
-            <div class="contact-header">
-                <div class="contact-number">05</div>
-                <h2 class="contact-title">
-                    Pojďme<br>
-                    <em>spolupracovat</em>
-                </h2>
-            </div>
-            
-            <div class="contact-info">
-                <a href="tel:+420123456789" class="contact-link contact-phone">
-                    <span class="link-label">Telefon</span>
-                    <span class="link-value">+420 123 456 789</span>
-                </a>
-                <a href="mailto:info@vincenec.cz" class="contact-link">
-                    <span class="link-label">E-mail</span>
-                    <span class="link-value">info@vincenec.cz</span>
-                </a>
-                <div class="contact-link">
-                    <span class="link-label">Adresa</span>
-                    <span class="link-value">Budovatelů 808/36, Havířov</span>
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Kontaktujte nás</h2>
+                    <p>Rádi vám poradíme s výběrem správného řešení. Konzultace je zdarma a nezávazně.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Telefon</strong>
+                            <a href="tel:+420123456789">+420 123 456 789</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>E-mail</strong>
+                            <a href="mailto:info@vincenec.cz">info@vincenec.cz</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Adresa</strong>
+                            <span>Budovatelů 808/36, 735 64 Havířov</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Otevírací doba</strong>
+                            <span>Po–Pá: 8:00–18:00<br>So–Ne: Pohotovost STA</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-link">
-                    <span class="link-label">Otevírací doba</span>
-                    <span class="link-value">Po–Pá 8:00–18:00</span>
-                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Jméno</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Služba</label>
+                        <select id="service" name="service">
+                            <option value="">Vyberte službu</option>
+                            <option value="anteny">Televizní antény</option>
+                            <option value="satelit">Satelitní systémy</option>
+                            <option value="alarmy">Alarmy a zabezpečení</option>
+                            <option value="kamery">Kamerové systémy</option>
+                            <option value="jine">Jiné</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Zpráva</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Odeslat poptávku</button>
+                </form>
             </div>
-        </div>
-        
-        <div class="contact-cta">
-            <a href="tel:+420123456789" class="big-cta">
-                <span class="cta-text">Zavolejte nám</span>
-                <span class="cta-arrow">→</span>
-            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <span class="footer-brand">VINCENEC</span>
-            <span class="footer-info">Martin Vincenec · IČO 02635305</span>
-            <span class="footer-copy">© 2024</span>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <strong>Martin Vincenec</strong>
+                    <span>Antény · Satelity · Alarmy · Kamery</span>
+                </div>
+                <div class="footer-info">
+                    <span>IČO: 02635305</span>
+                    <span>© 2024 Všechna práva vyhrazena</span>
+                </div>
+            </div>
         </div>
     </footer>
 
