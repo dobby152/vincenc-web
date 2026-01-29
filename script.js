@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileNav.classList.toggle('active');
     });
     
-    // Close mobile menu on link click
     document.querySelectorAll('.mobile-nav a').forEach(link => {
         link.addEventListener('click', () => {
             menuBtn.classList.remove('active');
@@ -34,11 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
     form?.addEventListener('submit', (e) => {
         e.preventDefault();
         const btn = form.querySelector('button');
-        const original = btn.textContent;
-        btn.textContent = '✓ Odesláno';
+        const original = btn.innerHTML;
+        btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Odesláno';
         btn.style.background = '#10b981';
         setTimeout(() => {
-            btn.textContent = original;
+            btn.innerHTML = original;
             btn.style.background = '';
             form.reset();
         }, 3000);
@@ -54,10 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1, rootMargin: '-50px' });
     
-    document.querySelectorAll('.service, .step, .review, .about-feature').forEach((el, i) => {
+    document.querySelectorAll('.service, .step, .review, .about-feature, .stat, .contact-item').forEach((el, i) => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
-        el.style.transition = `opacity 0.6s ease ${i * 0.1}s, transform 0.6s ease ${i * 0.1}s`;
+        el.style.transition = `opacity 0.5s ease ${i * 0.05}s, transform 0.5s ease ${i * 0.05}s`;
         observer.observe(el);
     });
+    
+    // Header background on scroll
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.9)';
+        }
+    }, { passive: true });
 });

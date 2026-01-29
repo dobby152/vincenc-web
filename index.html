@@ -7,13 +7,19 @@
     <meta name="description" content="Profesionální instalace antén, satelitů, alarmů a kamerových systémů. Havířov a Moravskoslezský kraj.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <div class="header-inner">
-            <a href="/" class="brand">Vincenec</a>
+            <a href="/" class="brand">
+                <svg class="brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 1v4M12 19v4M1 12h4M19 12h4"/>
+                </svg>
+                Vincenec
+            </a>
             <nav class="nav">
                 <a href="#sluzby">Služby</a>
                 <a href="#o-nas">O nás</a>
@@ -21,8 +27,10 @@
                 <a href="#kontakt">Kontakt</a>
             </nav>
             <a href="tel:+420123456789" class="header-phone">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-                <span>+420 123 456 789</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+                +420 123 456 789
             </a>
             <button class="menu-btn" aria-label="Menu">
                 <span></span>
@@ -42,37 +50,62 @@
     <main>
         <!-- Hero -->
         <section class="hero">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-glow"></div>
+            </div>
             <div class="hero-content">
                 <div class="hero-label">
-                    <span class="label-dot"></span>
-                    Havířov & okolí
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    Havířov & Moravskoslezský kraj
                 </div>
-                <h1>Spolehlivý signál<br>a bezpečí pro<br><em>váš domov</em></h1>
-                <p>Instalace a servis antén, satelitů, alarmů a kamer.<br>Více než 10 let zkušeností, 500+ spokojených zákazníků.</p>
+                <h1>
+                    <span class="title-line">Spolehlivý signál</span>
+                    <span class="title-line">a bezpečí pro</span>
+                    <span class="title-line highlight">váš domov</span>
+                </h1>
+                <p>Profesionální instalace a servis antén, satelitů, alarmů a kamerových systémů. Více než 10 let zkušeností.</p>
                 <div class="hero-cta">
-                    <a href="#kontakt" class="btn btn-primary">Nezávazná konzultace</a>
-                    <a href="#sluzby" class="btn btn-ghost">Naše služby →</a>
+                    <a href="#kontakt" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                        Nezávazná poptávka
+                    </a>
+                    <a href="#sluzby" class="btn btn-ghost">Naše služby</a>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="visual-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="24" cy="24" r="4"/>
-                            <path d="M12 24c0-6.627 5.373-12 12-12s12 5.373 12 12"/>
-                            <path d="M6 24c0-9.941 8.059-18 18-18s18 8.059 18 18" opacity="0.5"/>
+                <div class="signal-animation">
+                    <div class="signal-ring"></div>
+                    <div class="signal-ring"></div>
+                    <div class="signal-ring"></div>
+                    <div class="signal-core">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M8.12 8.12a6 6 0 018.76 8.76"/>
+                            <path d="M5.64 5.64a10 10 0 0112.72 12.72"/>
                         </svg>
                     </div>
-                    <span class="card-label">Silný signál</span>
                 </div>
-                <div class="visual-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M24 44s16-8 16-20V10L24 4 8 10v14c0 12 16 20 16 20z"/>
-                            <path d="M16 24l5 5 11-11"/>
+                <div class="hero-cards">
+                    <div class="hero-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
                         </svg>
+                        <span>500+ instalací</span>
                     </div>
-                    <span class="card-label">Bezpečí</span>
+                    <div class="hero-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <span>Servis 24h</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -81,48 +114,162 @@
         <section class="stats">
             <div class="stats-inner">
                 <div class="stat">
-                    <span class="stat-num">500+</span>
-                    <span class="stat-label">instalací</span>
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">500+</span>
+                        <span class="stat-label">spokojených zákazníků</span>
+                    </div>
                 </div>
-                <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-num">10+</span>
-                    <span class="stat-label">let praxe</span>
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">let na trhu</span>
+                    </div>
                 </div>
-                <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-num">24h</span>
-                    <span class="stat-label">servis</span>
+                    <div class="stat-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <div class="stat-text">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">záruka kvality</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Services -->
         <section id="sluzby" class="services">
-            <div class="section-intro">
-                <span class="section-label">Služby</span>
-                <h2>Co pro vás<br>můžeme udělat</h2>
+            <div class="section-header">
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                        <polyline points="2 17 12 22 22 17"/>
+                        <polyline points="2 12 12 17 22 12"/>
+                    </svg>
+                    Služby
+                </span>
+                <h2>Co pro vás můžeme udělat</h2>
             </div>
             <div class="services-grid">
                 <article class="service">
-                    <span class="service-num">01</span>
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4.93 4.93a10 10 0 0114.14 0"/>
+                            <path d="M7.76 7.76a6 6 0 018.48 0"/>
+                            <circle cx="12" cy="12" r="2"/>
+                            <line x1="12" y1="14" x2="12" y2="22"/>
+                        </svg>
+                    </div>
                     <h3>Televizní antény</h3>
-                    <p>Instalace DVB-T2 antén, měření signálu, společné i individuální rozvody STA pro panelové a rodinné domy.</p>
+                    <p>Instalace DVB-T2 antén, měření signálu, společné i individuální rozvody STA.</p>
+                    <ul class="service-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Měření signálu
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Rozvody STA
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Rekonstrukce
+                        </li>
+                    </ul>
                 </article>
                 <article class="service">
-                    <span class="service-num">02</span>
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <line x1="12" y1="2" x2="12" y2="4"/>
+                            <line x1="12" y1="20" x2="12" y2="22"/>
+                            <line x1="2" y1="12" x2="4" y2="12"/>
+                            <line x1="20" y1="12" x2="22" y2="12"/>
+                        </svg>
+                    </div>
                     <h3>Satelitní systémy</h3>
-                    <p>Skylink, freeSAT, zahraniční programy. Kompletní řešení od návrhu po instalaci včetně motorových parabol.</p>
+                    <p>Skylink, freeSAT, zahraniční programy. Kompletní řešení včetně motorových parabol.</p>
+                    <ul class="service-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Skylink, freeSAT
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Motorové paraboly
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Bytové domy
+                        </li>
+                    </ul>
                 </article>
                 <article class="service">
-                    <span class="service-num">03</span>
-                    <h3>Alarmy</h3>
-                    <p>Elektronické zabezpečovací systémy pro domácnosti i firmy. Bezdrátové řešení, napojení na PCO, vzdálená správa.</p>
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Alarmy a EZS</h3>
+                    <p>Elektronické zabezpečovací systémy pro domácnosti i firmy. Bezdrátové řešení.</p>
+                    <ul class="service-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Napojení na PCO
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Vzdálená správa
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Bezdrátové systémy
+                        </li>
+                    </ul>
                 </article>
                 <article class="service">
-                    <span class="service-num">04</span>
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/>
+                            <circle cx="12" cy="13" r="4"/>
+                        </svg>
+                    </div>
                     <h3>Kamerové systémy</h3>
-                    <p>IP a CCTV kamery s HD rozlišením, noční vidění, vzdálený přístup z mobilu, záznam a archivace.</p>
+                    <p>IP a CCTV kamery s HD rozlišením, noční vidění, vzdálený přístup z mobilu.</p>
+                    <ul class="service-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            HD rozlišení
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Vzdálený přístup
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            Noční vidění
+                        </li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -130,74 +277,153 @@
         <!-- About -->
         <section id="o-nas" class="about">
             <div class="about-content">
-                <span class="section-label">O nás</span>
-                <h2>Profesionální přístup<br>a férové jednání</h2>
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="16" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    O nás
+                </span>
+                <h2>Profesionální přístup a férové jednání</h2>
                 <p class="about-lead">Jsme specialisté na televizní, satelitní a zabezpečovací techniku. Působíme v Havířově a celém Moravskoslezském kraji.</p>
                 <div class="about-features">
                     <div class="about-feature">
-                        <strong>Transparentní ceny</strong>
-                        <span>Cenová nabídka předem, bez skrytých poplatků</span>
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"/>
+                                <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Transparentní ceny</strong>
+                            <span>Cenová nabídka předem, bez skrytých poplatků</span>
+                        </div>
                     </div>
                     <div class="about-feature">
-                        <strong>Rychlý servis</strong>
-                        <span>Pohotovost do 24 hodin, víkendový servis STA</span>
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Rychlý servis</strong>
+                            <span>Pohotovost do 24 hodin, víkendový servis</span>
+                        </div>
                     </div>
                     <div class="about-feature">
-                        <strong>Záruka kvality</strong>
-                        <span>Záruční i pozáruční servis, kvalitní komponenty</span>
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Záruka kvality</strong>
+                            <span>Záruční i pozáruční servis</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="about-visual">
                 <div class="about-badge">
                     <span class="badge-num">10+</span>
-                    <span class="badge-text">let na trhu</span>
+                    <span class="badge-text">let zkušeností</span>
                 </div>
             </div>
         </section>
 
         <!-- Process -->
         <section class="process">
-            <div class="section-intro">
-                <span class="section-label">Postup</span>
-                <h2>Jak probíhá<br>spolupráce</h2>
+            <div class="section-header">
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                    Postup
+                </span>
+                <h2>Jak probíhá spolupráce</h2>
             </div>
             <div class="process-steps">
                 <div class="step">
-                    <div class="step-marker">1</div>
+                    <div class="step-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                        </svg>
+                    </div>
+                    <span class="step-num">01</span>
                     <h3>Konzultace</h3>
-                    <p>Zjistíme vaše potřeby a navrhneme řešení na míru.</p>
+                    <p>Zjistíme vaše potřeby a navrhneme řešení.</p>
                 </div>
                 <div class="step">
-                    <div class="step-marker">2</div>
+                    <div class="step-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                    </div>
+                    <span class="step-num">02</span>
                     <h3>Nabídka</h3>
                     <p>Připravíme detailní cenovou kalkulaci.</p>
                 </div>
                 <div class="step">
-                    <div class="step-marker">3</div>
+                    <div class="step-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <span class="step-num">03</span>
                     <h3>Realizace</h3>
-                    <p>Profesionální instalace v dohodnutém termínu.</p>
+                    <p>Profesionální instalace v termínu.</p>
                 </div>
                 <div class="step">
-                    <div class="step-marker">4</div>
-                    <h3>Servis</h3>
-                    <p>Záruční a pozáruční podpora kdykoliv.</p>
+                    <div class="step-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="step-num">04</span>
+                    <h3>Podpora</h3>
+                    <p>Záruční a pozáruční servis.</p>
                 </div>
             </div>
         </section>
 
         <!-- Reviews -->
         <section id="reference" class="reviews">
-            <div class="section-intro">
-                <span class="section-label">Reference</span>
-                <h2>Co říkají<br>naši zákazníci</h2>
+            <div class="section-header">
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                    Reference
+                </span>
+                <h2>Co říkají naši zákazníci</h2>
             </div>
-            <div class="reviews-list">
+            <div class="reviews-grid">
                 <blockquote class="review">
+                    <div class="review-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
                     <p>"Naprosto perfektní služby. Ráno telefonická poptávka a odpoledne funkční anténní systém. Profesionálové na svém místě."</p>
                     <cite>— Zákazník z Havířova, 2025</cite>
                 </blockquote>
                 <blockquote class="review">
+                    <div class="review-stars">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
                     <p>"Profesionální přístup, kvalitní práce a ochota. Doporučuji všem, kdo hledá spolehlivého odborníka."</p>
                     <cite>— Zákazník z Karviné, 2024</cite>
                 </blockquote>
@@ -207,26 +433,63 @@
         <!-- Contact -->
         <section id="kontakt" class="contact">
             <div class="contact-info">
-                <span class="section-label">Kontakt</span>
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Kontakt
+                </span>
                 <h2>Ozvěte se nám</h2>
                 <p>Rádi vám poradíme s výběrem správného řešení. Konzultace je zdarma.</p>
                 
                 <div class="contact-details">
                     <a href="tel:+420123456789" class="contact-item">
-                        <strong>Telefon</strong>
-                        <span>+420 123 456 789</span>
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Telefon</strong>
+                            <span>+420 123 456 789</span>
+                        </div>
                     </a>
                     <a href="mailto:info@vincenec.cz" class="contact-item">
-                        <strong>E-mail</strong>
-                        <span>info@vincenec.cz</span>
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>E-mail</strong>
+                            <span>info@vincenec.cz</span>
+                        </div>
                     </a>
                     <div class="contact-item">
-                        <strong>Adresa</strong>
-                        <span>Budovatelů 808/36<br>735 64 Havířov</span>
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Adresa</strong>
+                            <span>Budovatelů 808/36, 735 64 Havířov</span>
+                        </div>
                     </div>
                     <div class="contact-item">
-                        <strong>Otevírací doba</strong>
-                        <span>Po–Pá: 8:00–18:00<br>Víkend: pohotovost</span>
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Otevírací doba</strong>
+                            <span>Po–Pá: 8:00–18:00</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -249,7 +512,12 @@
                     <label for="message">Zpráva</label>
                     <textarea id="message" name="message" rows="4"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-full">Odeslat poptávku</button>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                    Odeslat poptávku
+                </button>
             </form>
         </section>
     </main>
